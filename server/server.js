@@ -19,7 +19,7 @@ server.use(
   })
 );
 
-const Port = 5000;
+const Port = process.env.PORT || 5000;
 
 server.use("/api/auth", auth);
 server.use("/api/blog", blogs);
