@@ -36,7 +36,7 @@ const useAuthHook = () => {
       dispatch(trustActions(trust));
 
       navigate(from, { replace: true });
-      window.location.reload()
+      // window.location.reload()
     } catch (err) {
       const msg = err.response.data;
       dispatch(errorAction(msg));
