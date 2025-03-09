@@ -12,6 +12,9 @@ const server = express();
 
 server.use(express.json());
 server.use(cookie());
+
+console.log( process.env.CLIENT_URL)
+
 server.use(
   cors({
     origin: process.env.CLIENT_URL,
