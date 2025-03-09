@@ -21,11 +21,11 @@ function App() {
   return (
     <div className="app">
       
+          <ToastContainer position="top-right"
+           autoClose={1000}theme="light"/>
         
           <Header />
           <div className={`main_container ${dark ? "main_dark" : "main_light"}`}>
-          <ToastContainer position="top-right"
-           autoClose={1000}theme="light"/>
             <Routes>
               <Route element={<PersistAuth />}>
 
